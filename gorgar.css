@@ -1,0 +1,9 @@
+img {
+    max-width: 60%;
+    height: auto;
+    float: left;
+  }
+
+.main {
+    float: right;
+}

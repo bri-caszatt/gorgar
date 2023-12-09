@@ -3,9 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title>Me Gorgar, Beat Me</title>
+    <link rel="stylesheet" href="gorgar.css">
   </head>
   <body>
     <h1>Gorgar Speaks! A Literary Pinball Adventure</h1>
-    <p>Me Gorgar, beat me.</p>
+    <div id="intro">
+      <p>Click on a silver ball on the playfield to hit a new shot.</p>
+    </div>
+
+    <img src="gorgar2.jpg" alt="Playfield of Gorgar pinball table" usemap="#gorgarmap">
+
+    <map name="gorgarmap">
+      <area shape="circle" coords="2286,3434,100" alt="silver circle in shooter lane" href="gorgar-speaks.html">
+      <area shape="circle" coords="1890,1767,100" alt="silver cirlce at number 3 advance target on right" href="me-hurt.html">
+      <area shape="circle" coords="727,300,100" alt="silver cirlce at snake pit magnet" href="me-got-you.html">
+      <area shape="circle" coords="1248,1422,100" alt="silver cirlce at A drop target in G-A-R" href="gorgar.html">
+      <area shape="circle" coords="582,734,100" alt="silver circle at O drop target in G-O-R" href="gorgar.html">
+      <area shape="circle" coords="502,1382,100" alt="silver circle at eject hole" href="you-hurt-gorgar.html">
+      <area shape="circle" coords="1490,360,100" alt="silver circle above B rollover lane" href="you-beat-me.html">
+      <area shape="circle" coords="1216,2116,100" alt="silver cirlce over 20 light, over the chest of Gorgar" href="you-beat-gorgar.html">
+      <area shape="circle" coords="1216,3389,100" alt="silver circle just below the flippers in the center drain" href="me-gorgar-beat-me.html">
+    </map>
+
+      <div id="first">
+      <p>Me Gorgar, beat me.</p>
+      </div>
+
+      <button id="repeatShot">Hit Same Shot Again</button>
+
+      <div id="second">
+        <p>“G-A-R” Drop Targets Reset. “G-O-R” Drop Targets Reset. Not Lit Initially. Game Identification. Heartbeat Background Sound. Sound. Sound. Sound. Sound. Sound. Cycle in attract mode.</p>
+      </div>
+
+      <button id="repeatAgain">And Again</button>
+
+      <div id="third">
+        <p>TK</p>
+      </div>
+
+    <script src="imageMapResizer.min.js"></script>
   </body>
 </html>

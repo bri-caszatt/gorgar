@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="gorgar.css">
   </head>
   <body>
-    <h1>Gorgar Speaks! A Literary Pinball Adventure</h1>
+    <h1><a href="index.html">Gorgar Speaks! A Literary Pinball Adventure</a></h1>
     <div id="intro">
-      <p>Click on a silver ball on the playfield to hit a new shot.</p>
+      <p>Click on a silver ball on the playfield image below to hit a new shot.</p>
     </div>
 
-    <img src="gorgar2.jpg" alt="Playfield of Gorgar pinball table" usemap="#gorgarmap">
+    <img id="map" src="gorgar2.jpg" alt="Playfield of Gorgar pinball table" usemap="#gorgarmap">
 
     <map name="gorgarmap">
       <area shape="circle" coords="2286,3434,100" alt="silver circle in shooter lane" href="gorgar-speaks.html">
@@ -25,22 +25,23 @@
       <area shape="circle" coords="1216,3389,100" alt="silver circle just below the flippers in the center drain" href="me-gorgar-beat-me.html">
     </map>
 
-    <div id="first">
-      <p>Gorgar speaks.</p>
-    </div>
-
-    <button id="repeatShot">Hit Same Shot Again</button>
-
-    <div id="second">
-      <p>Model D 8224 required for speech. Requires 5T4961 (1C7), 5T4962 (ICS), and 5T4963 (IC6) speech ROMs. Sounds made as appropriate. Phrases are produced. Partial spotting of “A-B-C”, “D-E”.</p>
-    </div>
-
-    <button id="repeatAgain">And Again</button>
+    <div id="shots">
+      <h2>Gorgar speaks.</h2>
     
-    <div id="third">
-      <p>TK</p>
+      <button id="repeatShot">Hit Same Shot Again</button>
+
+      <section id="second" style="display:none">
+        <p>Model D 8224 required for speech. Requires 5T4961 (1C7), 5T4962 (ICS), and 5T4963 (IC6) speech ROMs. Sounds made as appropriate. Phrases are produced. Partial spotting of “A-B-C”, “D-E”.</p>
+        <button id="repeatAgain">And Again</button>
+      </section>
+
+      <section id="third" style="display:none">
+        <p>My creators gave me seven words: Gorgar, speaks, beat, you, me, hurt, got. Are you a creator too? What words will you give me?</p>
+      </section>
     </div>
-  
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="imageMapResizer.min.js"></script>
+    <script src="gorgar.js"></script>
   </body>
 </html>

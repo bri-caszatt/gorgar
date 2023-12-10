@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="gorgar.css">
   </head>
   <body>
-    <h1>Gorgar Speaks! A Literary Pinball Adventure</h1>
+    <h1><a href="index.html">Gorgar Speaks! A Literary Pinball Adventure</a></h1>
     
-    <img src="gorgar2.jpg" alt="Playfield of Gorgar pinball table" usemap="#gorgarmap">
+    <img id="map" src="gorgar2.jpg" alt="Playfield of Gorgar pinball table" usemap="#gorgarmap">
 
     <map name="gorgarmap">
       <area shape="circle" coords="2286,3434,100" alt="silver circle in shooter lane" href="gorgar-speaks.html">
@@ -23,9 +23,15 @@
     </map>
 
     <div id="intro">
-      <p>Overview and instructions on how to play TK</p>
+      <p>In 1979, Williams, a former leading pinball manufacturer, released the first pinball table to speak: <a href="gorgar.html">Gorgar</a>. It marked a major milestone in pinball, and game technology in general.</p>
+      <img id="back" src="gorgarBack.jpg" alt="Girl in a jacket">
+      <p>The premise of the game is that you are a big, burly barbarian (think He-Man) fighting your way into the volcanic lair of a demon named Gorgar who has kidnapped your preposterously proportioned and barely bikinied lover.</p>
+      <p>To defeat Gorgar, you have to hit various targets and spinners, and based on which of these shots you hit, you trigger Gorgar's speech mechanism.</p>
+      <p>Click any of the silver balls on the playfield image to your left to play and hear <a href="gorgar-speaks.html">Gorgar speak</a>.</p>
     </div>
-    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="imageMapResizer.min.js"></script>
+    <script src="gorgar.js"></script>
   </body>
 </html>

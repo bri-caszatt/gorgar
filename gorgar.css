@@ -1,9 +1,35 @@
-img {
-    max-width: 60%;
+#map {
+    max-width: 55%;
     height: auto;
     float: left;
+    margin: 1%;
   }
 
-.main {
+#back {
+    max-width: 25%;
+    height: auto;
     float: right;
+}
+
+#shots {
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h1, h2, #intro, #repeatShot, #repeatAgain {
+    font-family: 'Monaco', 'Courier New', 'monospace';
+}
+
+#second {
+    font-family: 'Helvetica', 'sans-serif';
+    font-size: larger;
+}
+
+#third {
+    font-family: 'Garamond', 'serif';
+    font-size: xx-large;
+    font-weight: bold;
 }

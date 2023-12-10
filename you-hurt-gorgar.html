@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="gorgar.css">
   </head>
   <body>
-    <h1>Gorgar Speaks! A Literary Pinball Adventure</h1>
+    <h1><a href="index.html">Gorgar Speaks! A Literary Pinball Adventure</a></h1>
     <div id="intro">
-      <p>Click on a silver ball on the playfield to hit a new shot.</p>
+      <p>Click on a silver ball on the playfield image below to hit a new shot.</p>
     </div>
 
-    <img src="gorgar2.jpg" alt="Playfield of Gorgar pinball table" usemap="#gorgarmap">
+    <img id="map" src="gorgar2.jpg" alt="Playfield of Gorgar pinball table" usemap="#gorgarmap">
 
     <map name="gorgarmap">
       <area shape="circle" coords="2286,3434,100" alt="silver circle in shooter lane" href="gorgar-speaks.html">
@@ -25,22 +25,23 @@
       <area shape="circle" coords="1216,3389,100" alt="silver circle just below the flippers in the center drain" href="me-gorgar-beat-me.html">
     </map>
 
-    <div id="first">
-      <p>You hurt Gorgar.</p>
-    </div>
-
-    <button id="repeatShot">Hit Same Shot Again</button>
-
-    <div id="second">
-      <p>*Indicates adjustable features. Knocker sounds. Coin lockout de-energized. Credits are below maximum.</p>
-    </div>
-
-    <button id="repeatAgain">And Again</button>
+    <div id="shots">
+      <h2>You hurt Gorgar.</h2>
     
-    <div id="third">
-      <p>TK</p>
+      <button id="repeatShot">Hit Same Shot Again</button>
+
+      <section id="second" style="display:none">
+        <p>*Indicates adjustable features. Knocker sounds. Coin lockout de-energized. Credits are below maximum.</p>
+        <button id="repeatAgain">And Again</button>
+      </section>
+
+      <section id="third" style="display:none">
+        <p>TK</p>
+      </section>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="imageMapResizer.min.js"></script>
+    <script src="gorgar.js"></script>
   </body>
 </html>

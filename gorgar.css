@@ -3,6 +3,7 @@
     height: auto;
     float: left;
     margin: 2%;
+    border-radius: 10px;
   }
 
 #back {
@@ -49,7 +50,8 @@ h1, h2 {
 #repeatShot, #repeatAgain {
     font-family: 'Gill Sans', 'sans-serif';
     font-size: large;
-    background-color: silver;
+    font-weight: bold;
+    background-color: #888687;
     padding: 10px;
     border-radius: 10px;
     border: 3px solid black;
@@ -67,9 +69,13 @@ a {
     margin: 0 -.25rem;
     padding: 0 .25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-  }
-  a:hover {
+}
+
+a:hover {
     box-shadow: inset 1000px 0 0 0 #8A0707;
     color: white;
-  }
-  
+}
+
+body {
+    background-color: #e9ba30;
+}
